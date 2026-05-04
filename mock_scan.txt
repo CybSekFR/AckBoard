@@ -1,0 +1,40 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2026-05-04 15:00 UTC
+Nmap scan report for router.local (192.168.1.1)
+Host is up (0.0012s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.80
+80/tcp open  http    lighttpd 1.4.53
+MAC Address: 00:11:22:33:44:55 (Cisco Systems)
+OS details: Embedded Linux
+
+Nmap scan report for web-server.local (192.168.1.10)
+Host is up (0.00034s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.1
+80/tcp  open  http     Apache httpd 2.4.41 ((Ubuntu))
+443/tcp open  ssl/http Apache httpd 2.4.41
+MAC Address: AA:BB:CC:DD:EE:FF (VMware)
+OS details: Linux 4.15 - 5.6
+
+Nmap scan report for dev-machine (192.168.1.50)
+Host is up (0.00056s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3
+MAC Address: 11:22:33:44:55:66 (Intel Corporate)
+OS details: Linux 5.15
+
+Nmap scan report for old-printer (192.168.1.100)
+Host is up (0.0050s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT    STATE SERVICE VERSION
+21/tcp  open  ftp     vsftpd 2.0.8
+23/tcp  open  telnet  Linux telnetd
+80/tcp  open  http    GoAhead WebServer
+515/tcp open  printer
+MAC Address: 99:88:77:66:55:44 (HP)
+OS details: VxWorks
+
+Nmap done: 256 IP addresses (4 hosts up) scanned in 12.45 seconds
