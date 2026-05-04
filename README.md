@@ -5,12 +5,60 @@
   <br>
   <h1>🌐 AckBoard</h1>
   <p><b>Advanced Nmap Topology Visualizer & Attack Surface Dashboard</b></p>
+  <p><i>Développé par un étudiant en cybersécurité / Developed by a cybersecurity student</i></p>
 </div>
 
 ---
 
+<p align="center">
+  <a href="#-version-française">🇫🇷 Version Française</a> • <a href="#-english-version">🇬🇧 English Version</a>
+</p>
+
+---
+
+# 🇫🇷 Version Française
+
+## 📖 Présentation
+**AckBoard** est un outil de visualisation réseau ultra-rapide, 100% côté client et sans serveur, conçu par un étudiant en cybersécurité pour les ingénieurs réseau, les pentesters et les administrateurs système. 
+
+Il prend en charge les résultats de scans **Nmap** (fichiers `.txt` ou `.xml`) et les transforme instantanément en topologies réseau interactives, dynamiques et lisibles, sans **jamais** envoyer vos données d'infrastructure sensibles sur internet.
+
+Tout s'exécute de manière sécurisée et locale directement dans votre navigateur.
+
+## ✨ Fonctionnalités Clés
+
+- 🔒 **100% Hors-Ligne & Côté Client** : Aucun backend, pas de Node.js, aucune requête API. Vos données de scan ne quittent jamais votre machine. Double-cliquez simplement sur `index.html`.
+- 🕸️ **Topologie Interactive** : Un graphe réseau basé sur la physique, interactif et fluide, généré via `vis-network`. Plusieurs dispositions sont supportées (Organique, Arbres Hiérarchiques, Éclaté).
+- 🎨 **Auto-Classification Intelligente** : Les machines reçoivent dynamiquement des icônes SVG en fonction de leurs ports ouverts (ex: Serveurs Web, Bases de données, Serveurs de fichiers Windows, Linux).
+- 🔍 **Filtres de Surface d'Attaque** : Isolez instantanément les cibles de forte valeur grâce aux "Filtres Rapides" (Serveurs Web, Accès Distants comme SSH/RDP, Bases de données).
+- 📊 **Tableau de Bord Complet** : Naviguez facilement entre la vue Topologie, un Tableau détaillé des Hôtes, et un résumé global des Services & Ports.
+- 📸 **Générateur de Rapport** : Exportez votre graphe actuel en PNG haute qualité (avec un encart de résumé généré automatiquement), prêt à être intégré dans vos rapports de pentest.
+
+## 🚀 Démarrage Rapide
+
+AckBoard ne nécessite **aucune installation** ni compilation.
+
+1. **Clonez ou téléchargez** ce dépôt.
+2. Ouvrez le dossier et double-cliquez sur `index.html` pour l'ouvrir dans votre navigateur.
+3. **Glissez-déposez** le résultat de votre scan Nmap (`.txt` ou `.xml`) dans la zone prévue à cet effet.
+4. Explorez votre réseau !
+
+*Un fichier `mock_scan.txt` d'exemple est fourni pour vous permettre de tester l'interface immédiatement.*
+
+## 🛠️ Stack Technique
+
+AckBoard a été développé avec une approche strictement "Vanilla" (sans frameworks lourds) pour garantir une portabilité maximale et aucune charge de configuration.
+- **Logique Frontend** : Vanilla JavaScript (ES6+), DOMParser, API HTML5 FileReader
+- **Stylisation** : Tailwind CSS (via CDN) pour une esthétique moderne "Dark NOC"
+- **Moteur Graphique** : Vis-Network
+- **Icônes** : Lucide Icons & SVGs personnalisés
+
+---
+
+# 🇬🇧 English Version
+
 ## 📖 Overview
-**AckBoard** is a lightning-fast, 100% client-side, zero-server network visualization tool designed for Network Engineers, Pentesters, and System Administrators. 
+**AckBoard** is a lightning-fast, 100% client-side, zero-server network visualization tool crafted by a cybersecurity student for Network Engineers, Pentesters, and System Administrators. 
 
 It takes standard **Nmap scan outputs** (`.txt` or `.xml`) and instantly transforms them into interactive, dynamic, and highly readable network topologies—without ever sending your sensitive infrastructure data over the network. 
 
@@ -44,11 +92,6 @@ AckBoard was built with a strict "Vanilla-first" philosophy to ensure maximum po
 - **Styling**: Tailwind CSS (via CDN) for a sleek, modern "Dark NOC" aesthetic
 - **Graph Engine**: Vis-Network
 - **Icons**: Lucide Icons & Custom inline SVGs
-
-## 💡 Use Cases
-- **Penetration Testing**: Quickly visualize the footprint of a target network and identify vulnerable services.
-- **IT Audits**: Generate clean network maps for compliance reports or infrastructure reviews.
-- **CTF / Homelab**: Visually map out your HackTheBox networks or home lab subnets.
 
 ## 📝 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute as you see fit.
