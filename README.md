@@ -6,6 +6,13 @@
   <h1>🌐 AckBoard</h1>
   <p><b>Advanced Nmap Topology Visualizer & Attack Surface Dashboard</b></p>
   <p><i>Développé par un étudiant en cybersécurité / Developed by a cybersecurity student</i></p>
+  <br>
+  <a href="https://votre-pseudo.github.io/AckBoard" target="_blank">
+    <strong>🚀 Tester l'application (Live Demo) / Try the Live Demo 🚀</strong>
+  </a>
+  <br><br>
+  <!-- Main Hero Image Placeholder -->
+  <img src="assets/main_preview.png" alt="AckBoard Interface Preview" width="850" style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
 </div>
 
 ---
@@ -23,35 +30,37 @@
 
 Il prend en charge les résultats de scans **Nmap** (fichiers `.txt` ou `.xml`) et les transforme instantanément en topologies réseau interactives, dynamiques et lisibles, sans **jamais** envoyer vos données d'infrastructure sensibles sur internet.
 
-Tout s'exécute de manière sécurisée et locale directement dans votre navigateur.
+## 📸 Aperçu de l'Interface
+
+<div align="center">
+  <!-- Screenshots Placeholders -->
+  <img src="assets/topology_filters.png" alt="Filtres de Surface d'Attaque" width="48%">
+  <img src="assets/services_dashboard.png" alt="Tableau de Bord des Services" width="48%">
+</div>
 
 ## ✨ Fonctionnalités Clés
 
-- 🔒 **100% Hors-Ligne & Côté Client** : Aucun backend, pas de Node.js, aucune requête API. Vos données de scan ne quittent jamais votre machine. Double-cliquez simplement sur `index.html`.
-- 🕸️ **Topologie Interactive** : Un graphe réseau basé sur la physique, interactif et fluide, généré via `vis-network`. Plusieurs dispositions sont supportées (Organique, Arbres Hiérarchiques, Éclaté).
-- 🎨 **Auto-Classification Intelligente** : Les machines reçoivent dynamiquement des icônes SVG en fonction de leurs ports ouverts (ex: Serveurs Web, Bases de données, Serveurs de fichiers Windows, Linux).
-- 🔍 **Filtres de Surface d'Attaque** : Isolez instantanément les cibles de forte valeur grâce aux "Filtres Rapides" (Serveurs Web, Accès Distants comme SSH/RDP, Bases de données).
-- 📊 **Tableau de Bord Complet** : Naviguez facilement entre la vue Topologie, un Tableau détaillé des Hôtes, et un résumé global des Services & Ports.
-- 📸 **Générateur de Rapport** : Exportez votre graphe actuel en PNG haute qualité (avec un encart de résumé généré automatiquement), prêt à être intégré dans vos rapports de pentest.
+- 🔒 **100% Hors-Ligne & Côté Client** : Aucun backend, pas de Node.js, aucune requête API. Vos données de scan ne quittent jamais votre navigateur.
+- 🕸️ **Topologie Interactive** : Un graphe réseau dynamique généré via `vis-network`. Plusieurs dispositions sont supportées (Organique, Arbres, Éclaté).
+- 🎨 **Auto-Classification Intelligente** : Les machines reçoivent dynamiquement des icônes SVG en fonction de leurs ports ouverts (Serveurs Web, Bases de données, etc.).
+- 🔍 **Filtres de Surface d'Attaque** : Isolez instantanément les cibles (Web, Accès Distants, DB) grâce à la barre de filtres.
+- 📊 **Tableau de Bord Complet** : Vue Topologie, Tableau détaillé des Hôtes, et résumé global des Services & Ports.
+- 📸 **Export PNG Intégré** : Exportez votre graphe actuel en PNG haute qualité avec un encart de résumé généré automatiquement pour vos rapports.
 
-## 🚀 Démarrage Rapide
+## 🚀 Démarrage & Live Demo
 
-AckBoard ne nécessite **aucune installation** ni compilation.
+Vous pouvez tester l'application immédiatement et en toute sécurité via le lien Live Demo ci-dessus (hébergé sur GitHub Pages).
 
-1. **Clonez ou téléchargez** ce dépôt.
-2. Ouvrez le dossier et double-cliquez sur `index.html` pour l'ouvrir dans votre navigateur.
-3. **Glissez-déposez** le résultat de votre scan Nmap (`.txt` ou `.xml`) dans la zone prévue à cet effet.
-4. Explorez votre réseau !
-
-*Un fichier `mock_scan.txt` d'exemple est fourni pour vous permettre de tester l'interface immédiatement.*
+Si vous préférez l'utiliser localement :
+1. Clonez ce dépôt.
+2. Double-cliquez sur `index.html`.
+3. Glissez-déposez le résultat de votre scan Nmap (`.txt` ou `.xml`).
+*Un fichier `mock_scan.txt` est fourni dans le dépôt pour tester.*
 
 ## 🛠️ Stack Technique
-
-AckBoard a été développé avec une approche strictement "Vanilla" (sans frameworks lourds) pour garantir une portabilité maximale et aucune charge de configuration.
-- **Logique Frontend** : Vanilla JavaScript (ES6+), DOMParser, API HTML5 FileReader
-- **Stylisation** : Tailwind CSS (via CDN) pour une esthétique moderne "Dark NOC"
-- **Moteur Graphique** : Vis-Network
-- **Icônes** : Lucide Icons & SVGs personnalisés
+- Vanilla JavaScript (ES6+), DOMParser
+- Tailwind CSS (via CDN)
+- Vis-Network & Lucide Icons
 
 ---
 
@@ -62,36 +71,37 @@ AckBoard a été développé avec une approche strictement "Vanilla" (sans frame
 
 It takes standard **Nmap scan outputs** (`.txt` or `.xml`) and instantly transforms them into interactive, dynamic, and highly readable network topologies—without ever sending your sensitive infrastructure data over the network. 
 
-Everything runs securely within your browser using modern Web APIs.
+## 📸 Interface Preview
+
+<div align="center">
+  <!-- Screenshots Placeholders -->
+  <img src="assets/topology_filters.png" alt="Attack Surface Filters" width="48%">
+  <img src="assets/services_dashboard.png" alt="Services Dashboard" width="48%">
+</div>
 
 ## ✨ Key Features
 
-- 🔒 **100% Offline & Client-Side**: No backend, no Node.js, no API calls. Your scan data never leaves your machine. Just double-click `index.html`.
-- 🕸️ **Interactive Topology**: A physics-based, interactive network graph powered by `vis-network`. Supports multiple layouts (Organic, Hierarchical Trees, Repulsion).
-- 🎨 **Smart Auto-Classification**: Devices are automatically assigned dynamic SVG icons based on their open ports (e.g., Web Servers, Databases, Windows File Shares, Linux Boxes).
-- 🔍 **Attack Surface Filters**: Instantly isolate high-value targets with one-click "Quick Filters" to highlight Web Servers, Remote Access services (SSH/RDP), or Databases.
-- 📊 **Comprehensive Dashboard**: Switch seamlessly between the Topology View, a detailed Hosts Table, and a globally aggregated Services & Ports summary.
-- 📸 **Report Integration**: Export your current network graph as a high-quality, professional PNG (with an auto-generated scan summary overlay), ready to be embedded into your pentest or audit reports.
+- 🔒 **100% Offline & Client-Side**: No backend, no Node.js, no API calls. Your scan data never leaves your browser.
+- 🕸️ **Interactive Topology**: A dynamic network graph powered by `vis-network`. Supports multiple layouts.
+- 🎨 **Smart Auto-Classification**: Devices are automatically assigned dynamic SVG icons based on their open ports (Web Servers, Databases, etc.).
+- 🔍 **Attack Surface Filters**: Instantly isolate high-value targets (Web, Remote Access, DB) using the quick filters bar.
+- 📊 **Comprehensive Dashboard**: Topology View, detailed Hosts Table, and aggregated Services & Ports summary.
+- 📸 **Built-in PNG Export**: Export your current network graph as a high-quality PNG with an auto-generated scan summary overlay.
 
-## 🚀 Quick Start
+## 🚀 Quick Start & Live Demo
 
-AckBoard requires **zero installation** or compilation.
+You can test the application immediately and securely via the Live Demo link at the top (hosted on GitHub Pages).
 
-1. **Clone or download** this repository.
-2. Open the folder and double-click on `index.html` to open it in your favorite modern browser.
-3. **Drag and drop** your Nmap scan result (`.txt` standard output or `.xml`) into the dropzone.
-4. Explore your network!
-
-*A sample `mock_scan.txt` is provided in the repository to let you test the interface immediately.*
+If you prefer to run it locally:
+1. Clone this repository.
+2. Double-click on `index.html`.
+3. Drag and drop your Nmap scan result (`.txt` or `.xml`).
+*A sample `mock_scan.txt` is provided in the repository for quick testing.*
 
 ## 🛠️ Tech Stack
-
-AckBoard was built with a strict "Vanilla-first" philosophy to ensure maximum portability and zero setup overhead.
-
-- **Frontend Logic**: Vanilla JavaScript (ES6+), DOMParser, HTML5 FileReader API
-- **Styling**: Tailwind CSS (via CDN) for a sleek, modern "Dark NOC" aesthetic
-- **Graph Engine**: Vis-Network
-- **Icons**: Lucide Icons & Custom inline SVGs
+- Vanilla JavaScript (ES6+), DOMParser
+- Tailwind CSS (via CDN)
+- Vis-Network & Lucide Icons
 
 ## 📝 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute as you see fit.
