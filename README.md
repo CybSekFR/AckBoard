@@ -15,15 +15,15 @@
 ## 📸 Aperçu de l'Interface / Screenshots
 
 ### Vue Topologique & Filtres
-![Topologie Interactive](assets/topology.png)
+![Topologie Interactive](assets/Topologie.png)
 
 ### Gestion du Réseau & IPAM (Canvas)
-![Vue Réseau et IPAM](assets/network-canvas.png)
-![Informations Réseau](assets/network-info.png)
+![Vue Réseau et IPAM](assets/Canva.png)
+![Informations Réseau](assets/network.png)
 
 ### Tableau de Bord des Hôtes & Services
-![Tableau des Hôtes](assets/hosts-table.png)
-![Résumé des Services](assets/services-ports.png)
+![Tableau des Hôtes](assets/hote.png)
+![Résumé des Services](assets/services.png)
 
 ---
 
