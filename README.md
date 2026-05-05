@@ -18,7 +18,7 @@
 ![Topologie Interactive](assets/Topologie.png)
 
 ### Gestion du Réseau & IPAM (Canvas)
-![Vue Réseau et IPAM](assets/Canva.png)
+![Vue Réseau et IPAM](assets/canva.png)
 ![Informations Réseau](assets/network.png)
 
 ### Tableau de Bord des Hôtes & Services
