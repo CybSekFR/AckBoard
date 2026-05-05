@@ -1,0 +1,23 @@
+/* vis-network custom overrides */
+#network-graph {
+  outline: none;
+}
+
+.vis-network {
+  outline: none !important;
+}
+
+/* Scrollbar styling for sidebar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
